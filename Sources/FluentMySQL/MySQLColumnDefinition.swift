@@ -75,7 +75,7 @@ public struct MySQLColumnDefinition {
     }
 
     /// A Decimal number
-    public static func decimal(precision: Int = 18, scale: Int = 2) -> MySQLColumnDefinition {
+    public static func decimal(precision: Int = 9, scale: Int = 2) -> MySQLColumnDefinition {
         return .init(name: "DECIMAL(\(precision),\(scale))")
     }
 
